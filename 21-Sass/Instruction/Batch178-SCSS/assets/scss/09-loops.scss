@@ -1,0 +1,46 @@
+//for loop
+
+@for $i from 1 through 5{
+    .baslik#{$i*2}{
+        background-color: red;
+        color: white;
+        font-size: 20+$i*5+px;
+    }
+}
+
+//while Loop
+$sayi:1;
+@while($sayi<=3){
+    .kutu#{$sayi}{
+        width:$sayi*100+px
+    }
+    $sayi:$sayi+1
+
+}
+
+//for each
+ $renkler: red,blue,green;
+@each $renk in $renkler{
+    .renk#{$renk}{
+        background-color: $renk;
+        color: $renk;
+    }
+
+
+$degiskenler:input,nazar,close;
+
+@each $degisken in $degiskenler{
+.icon-#{$degisken}{
+    background-image: url("/assets/image/#{$degisken}.png");
+    width: 150px;
+    height: 150px;
+    background-size:cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+
+}
+
+}
+
+}

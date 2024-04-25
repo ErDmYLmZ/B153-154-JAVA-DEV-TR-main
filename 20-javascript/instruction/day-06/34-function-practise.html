@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Practise</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        function getAge(){
+            alert(`My age is ${2023-2000}`);
+        } */
+
+      /* function getAge(birthYear){
+            alert(`My age is ${2023-birthYear}`);
+        } */
+
+      /* function getAge(birthYear){
+            const date = new Date()
+            const year = date.getFullYear();
+            console.log(year)
+            alert(`My age is ${year-birthYear}`);
+        } 
+ */
+
+      function getAge(birthYear) {
+        const date = new Date();
+        const year = date.getFullYear();
+        return year - birthYear;
+      }
+
+      
+      const age = getAge(1990);
+      alert(`Yaşınız: ${age}`);
+
+
+      const newAge = getAge(2000);
+      const bonus = 123 * newAge -234;
+
+    </script>
+  </body>
+</html>

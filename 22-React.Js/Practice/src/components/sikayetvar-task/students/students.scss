@@ -1,0 +1,21 @@
+.students {
+  .sc-dAbbOL {
+    div[id^="row-"] {
+      div[id^="cell-7"] {
+        padding-right: 0;
+        padding-left: 0;
+        justify-content: flex-end;
+      }
+    }
+  }
+  #cell-7-1,
+  #cell-7-2,
+  #cell-7-3,
+  #cell-7-4,
+  #cell-7-5,
+  #cell-7-6 {
+    padding-right: 0;
+    padding-left: 0;
+    justify-content: flex-end;
+  }
+}

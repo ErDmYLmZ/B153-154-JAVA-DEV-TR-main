@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+<body>
+
+    <input type="number" id="txtNum">
+    <button onclick="sum()">Sum</button>
+
+    <h4 id="result"></h4>
+
+    <script>
+
+        function sum(){
+            const txtNum = document.querySelector("#txtNum");
+            let num = Number(txtNum.value);
+            let total = 0;
+
+            // 8547 yi 10 a bölüp kalanı bul 
+            // kalanı toplama at
+            // 8547 deki 7 den kurtul 
+
+            // 854 ü 10 a bölüp kalanı bul
+            // kalanı toplama at
+            // 854 deki 4 ten kurtul
+
+            //85 i 10 böl
+            // ...
+
+            while(num > 0){
+                const digit = num % 10;
+                total += digit;
+                num = Math.floor(num / 10);
+            }
+
+            document.querySelector("#result").innerHTML = total;
+            //alert(total);
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

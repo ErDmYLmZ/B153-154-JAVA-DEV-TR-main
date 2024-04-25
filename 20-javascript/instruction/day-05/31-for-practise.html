@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Practise</title>
+  </head>
+  <body>
+    <input type="number" id="txtDiscountRate" />
+    <button onclick="setPrices()">Update</button>
+
+    <ul id="productList">
+      <li>Notebook <span>1500</span>$</li>
+      <li>Monitor <span>500</span>$</li>
+      <li>Keyboard <span>25</span>$</li>
+      <li>Mouse <span>5</span>$</li>
+      <li>Display Card <span>350</span>$</li>
+    </ul>
+
+    <script>
+      function setPrices() {
+        const txtDiscountRate = document.querySelector("#txtDiscountRate");
+        const productList = document.querySelectorAll("#productList li span");
+
+        const discountRate = Number(txtDiscountRate.value);
+
+        /* console.log(productList[0].innerText);
+            console.log(productList[1].innerText);
+            console.log(productList[2].innerText);
+            console.log(productList[3].innerText); */
+
+        /* let price1 = productList[0].innerText;
+            let price2 = productList[1].innerText;
+            let price3 = productList[2].innerText;
+            let price4 = productList[3].innerText;
+
+            price1 = price1 - price1 * discountRate / 100;
+            price2 = price2 - price2 * discountRate / 100;
+            price3 = price3 - price3 * discountRate / 100;
+            price4 = price4 - price4 * discountRate / 100;
+
+            productList[0].innerText = price1;
+            productList[1].innerText = price2;
+            productList[2].innerText = price3;
+            productList[3].innerText = price4; */
+
+        for (let i = 0; i < productList.length; i++) {
+          let price = productList[i].innerText;
+          price = price - (price * discountRate) / 100;
+          productList[i].innerText = price;
+        }
+
+        console.log(productList);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+  </head>
+  <body>
+    <button id="btnHello" ondblclick="sayHello1()">Say Hello</button>
+
+    <script>
+      //1. YÖNTEM
+      const sayHello1 = () => {
+        alert("Hello 1");
+      };
+
+
+      //2. YÖNTEM
+
+      const sayHello2 = () => {
+        alert("Hello 2");
+      };
+
+      const btn2 = document.querySelector("#btnHello");
+      btn2.onclick = sayHello2; // Burada fonksiyon sayHello2() bu şekilde kullanılmaz.
+
+
+      // 3.YÖNTEM
+
+      const sayHello3 = () => {
+        alert("Hello 3");
+      };
+
+      const btn3 = document.querySelector("#btnHello");
+      btn3.addEventListener("click", sayHello3);
+    
+
+
+      // 4.YÖNTEM
+
+      document.querySelector("#btnHello").addEventListener("mouseenter", ()=>{
+        alert("Mouse enter");
+      });
+
+
+
+    </script>
+  </body>
+</html>

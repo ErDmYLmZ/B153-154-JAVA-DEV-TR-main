@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread</title>
+  </head>
+  <body>
+    <script>
+      let cities = ["London", "Helsinki", "Tokyo", "Brussel", "Sivas"];
+      cities = ["Zurich", ...cities, "Marsilia"];
+      console.log(cities);
+
+
+      let countries1 = ["Germany", "Denmark", "Belgium", "France"];
+      let countries2 = ["USA", "Canada", "Venezuella", "Şili"];
+      let countries = [...countries1, ...countries2];
+      console.log(countries);
+
+
+      
+      const people = ["Ali", "Ayşe", "Mustafa", "Feyza", "Salih", "Mustafa", "Ali"];
+      // new Set, dizideki tekrar eden elemanları silip hepsinden tek bir tane olacak object forma döünştürür.
+      const uniquePeople = [...new Set(people)];
+      console.log(uniquePeople);
+
+      
+    </script>
+  </body>
+</html>

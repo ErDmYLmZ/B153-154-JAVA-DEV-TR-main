@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Curcuit</title>
+</head>
+<body>
+    <input type="number" id="txtScore">
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+        function calculate(){
+            const txtScore = document.querySelector("#txtScore");
+            const score = Number(txtScore.value);
+
+            //short circuit
+
+            (score<0 || score > 100) && alert("0-100 arasında giriniz")
+          //  !(score>=0 && score<=100) && alert("0-100 arasında giriniz")
+
+            // IF
+            // if( !(score>=0 && score<=100) ){ }
+            // if(score<0 || score > 100) { }
+        }
+    </script>
+</body>
+</html>

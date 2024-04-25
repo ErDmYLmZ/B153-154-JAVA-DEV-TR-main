@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+</head>
+<body>
+
+
+    <script>
+
+        const getAverage = (firstName, lastName, ...scores) => {  
+            const totalScore = scores.reduce( (t,x)=> t+x, 0 );
+            const average = totalScore / scores.length;
+            return `${firstName} ${lastName}'s average is ${average.toFixed(0)}`;
+        }
+
+        console.log(getAverage("Ali", "Gel", 12,67,23,65,89,90));
+        console.log(getAverage("Ayşe", "Koş", 23,65,89));
+
+
+    </script>
+    
+</body>
+</html>

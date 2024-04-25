@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+div.kutu1 {
+  background-color: aqua;
+  width: 3cm;
+  height: 60%;
+}
+div.kutu2 {
+  background-color: blueviolet;
+  width: 500px;
+}
+
+div.kutu3 {
+  background-color: darkgreen;
+  width: 50%;
+  height: 300px;
+}
+div.kutu4{
+    background-color: crimson;
+    width: 50%;
+    height: 50%;
+    font-size: 2rem;
+    
+}
+
+div.kutu5{
+    background-color: lightcoral;
+    width: 50vw;
+}
+

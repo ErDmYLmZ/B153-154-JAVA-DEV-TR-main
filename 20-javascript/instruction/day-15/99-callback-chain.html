@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback</title>
+  </head>
+  <body>
+    <script>
+      /*
+        - Google distance service: iki nokta arası mesafeyi hesaplıyor
+        - Car Rental service: Araç ve mesafe bilgisini alıp fiyatlandırma yapıyor
+        - Payment service: Fiyat bilgisini alıp ödeme işlemini gerçelşetiriyor
+      */
+
+      const getDistance = (a, b, cb) => {
+        // Alttaki asenkron yapıyı google ın distance API ına bağlandığını farzedelim.
+        setTimeout(() => {
+          const result = (a - b) * Math.floor(Math.random() * 50) + 1;
+          cb(result); //calback fonksiyonu çağrıldı
+        }, 3000);
+      };
+
+      const getCarPrice = (car, distance, cb) => {
+        setTimeout(() => {
+          const result = distance * Math.floor(Math.random() * 100) + 1;
+          cb(result);
+        }, 1500);
+      };
+
+      const doPayment = (price, cb) => {
+        setTimeout(() => {
+          const result = Math.random() - 0.5;
+          cb(result > 0 ? true : false);
+        }, 4000);
+      };
+
+
+      // calback chain in amacı birden fazla asenkron yapının istenilen sırada çalıştırılmasıdır.
+      getDistance(60, 20, (distance) => {
+        console.log(`Distance: ${distance}`);
+        getCarPrice("Mercedes", distance, (price) => {
+          console.log(`Price ${price}`);
+          doPayment(2500, (isSuccess) => {
+            console.log(isSuccess ? "Ödeme başarılı" : "Ödeme başarısız");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

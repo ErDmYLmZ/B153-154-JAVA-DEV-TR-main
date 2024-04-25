@@ -1,0 +1,37 @@
+$color1:red;
+$color2:green;
+$color3:blue;
+$color4:yellow;
+$ortala:center;
+$yuvarlak:50%;
+$padding-input:10px 20px;
+$cursor:pointer;
+
+input{
+
+    background-color: $color4;
+    padding: $padding-input;
+    font-size: 1.3rem;
+    color: $color2;
+
+}
+
+button{
+    background-color:$color3 ;
+    padding: $padding-input;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: $yuvarlak;
+    cursor: $cursor;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $color1;
+
+    &:hover{
+        background-color: $color2;
+        color: $color4;
+    }
+
+    
+}

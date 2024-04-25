@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        salary: 4500,
+        birthdate: "10.10.1984",
+      };
+
+      // GELENEKSEL YÖNTEM
+      const message1 = `${person.firstName} ${person.lastName} isimli kişi ${person.birthdate} tarihinde dünyaya gelmiştir ve maaşı aylık ${person.salary}$ dır`;
+      console.log(message1);
+
+      // Destructuring yöntemi
+      const { firstName, lastName, salary, birthdate} = person;
+      /*
+      const firstName = person.firstName;
+      const lastName = person.lastName;
+      const salary = person.salary;
+      const birthdate = person.birthdate;
+      */
+
+      const message2 = `${firstName} ${lastName} isimli kişi ${birthdate} tarihinde dünyaya gelmiştir ve maaşı aylık ${salary}$ dır`;
+      console.log(message2);
+    </script>
+  </body>
+</html>

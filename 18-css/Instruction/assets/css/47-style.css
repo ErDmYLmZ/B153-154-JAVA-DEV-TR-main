@@ -1,0 +1,108 @@
+:root{
+    --color1:skyblue ;
+    --color2:#FBB040;
+    --color3:#2D2D2D;
+    --color4:whitesmoke
+}
+body{
+    font-family: "Nunito";
+    margin: 0;
+}
+section.topbar{
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: var(--color4);
+
+
+}
+section.topbar ul,
+section.menubar ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+section.topbar ul a{
+    text-decoration: none;
+    color: var(--color4);
+}
+
+section.menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    background-color: var(--color4);
+    z-index: 1;
+
+}
+section.menubar img{
+    width: 200px;
+    height: auto;
+}
+
+section.menubar ul a{
+    text-decoration: none;
+    background-color: var(--color2);
+    color: var(--color3);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+section.menubar ul a:hover{
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+section.slider{
+    background-image: url("/assets/img/gunesin_dogusu_ve_batisi.jpg");
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+   
+
+}
+section.slider h2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--color4);
+    font-weight: 900;
+    text-shadow: 0 0 10px var(--color3);
+
+    
+}
+div.icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    background-color: rgb(63, 180, 63);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

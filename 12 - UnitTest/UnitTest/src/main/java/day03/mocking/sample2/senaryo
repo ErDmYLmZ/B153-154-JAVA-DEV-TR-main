@@ -1,0 +1,4 @@
+Senaryo: ShoppingCartService sinifi, kullanicinin sepetine urun eklemek icin ProductManager
+    sinifina bagimlidir. Her urunun stok durumunu kontrol etmek icin ProductManager'i kullanir.
+    Bizim test senaryomuzda, ShoppingCartService'in addProductToCart metodunu test edecegiz ve
+    ProductManager'in davranislarini kontrol etmek icin Mockito kullanacagiz.

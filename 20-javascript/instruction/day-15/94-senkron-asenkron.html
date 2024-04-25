@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Senkron Asenkron</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        for(let i=1; i<=15; i++){
+            console.log(`Hello ${i}`);
+        }
+
+        setTimeout( ()=>{
+            console.log("Hello async");
+        }, 1);
+
+
+        for(let i=1; i<=15; i++){
+            console.log(`Hi ${i}`);
+        }
+
+
+
+
+        const getData = () => { 
+            setTimeout(()=>{
+                console.log("Data 2");
+            })
+         }
+
+         console.log("data1")
+         getData();
+         console.log("data3")
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

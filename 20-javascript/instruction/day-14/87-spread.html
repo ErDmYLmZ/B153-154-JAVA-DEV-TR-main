@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread</title>
+  </head>
+  <body>
+    <script>
+      const arr = [12, 456, 78, 23, 56, 74, 2];
+
+      const sum = (n1, n2, n3, n4, n5, n6, n7) => {
+        return n1 + n2 + n3 + n4 + n5 + n6 + n7;
+      };
+
+
+
+      // console.log(sum(arr[0], arr[1], arr[2], arr[3], ))
+      console.log(sum(...arr)) // Spread
+
+
+      function x(...nums){ // REST
+
+      }
+    </script>
+  </body>
+</html>

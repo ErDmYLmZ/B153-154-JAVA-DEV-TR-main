@@ -1,0 +1,23 @@
+@mixin border-radius($val){
+    border-radius: $val;
+
+}
+
+@mixin flex($fd:column,$jc:space-between,$ai:strech,$gap:0,$fw:wrap){
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+    flex-wrap: $fw;
+
+}
+@mixin reset-list($p:0,$m:0){
+    padding: $p;
+    margin: $m;
+    list-style-type: none;
+}
+@mixin bg($key,$value){
+    background-#{$key}:$value;
+
+}

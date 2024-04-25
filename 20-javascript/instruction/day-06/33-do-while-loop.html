@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do While Loop</title>
+  </head>
+  <body>
+    <input type="number" id="txtNum" />
+    <button onclick="factoriel()">Factoriel</button>
+
+    <h4 id="result"></h4>
+
+    <script>
+      function factoriel() {
+        const txtNum = document.querySelector("#txtNum");
+        const result = document.querySelector("#result");
+        let num = Number(txtNum.value);
+
+        if (num < 0) {
+          alert("Please enter a positve number.");
+          txtNum.value = "";
+          result.innerHTML="";
+          txtNum.focus();
+          return;
+        }
+
+        if (num===0) {
+          num = 1;
+        }
+
+        // 7! = 7*6*5*4*3*2*1
+
+        let factoriel = 1;
+
+        do {
+          factoriel = factoriel * num;
+          num--;
+        } while (num > 1);
+
+        result.innerHTML = factoriel;
+      }
+    </script>
+  </body>
+</html>

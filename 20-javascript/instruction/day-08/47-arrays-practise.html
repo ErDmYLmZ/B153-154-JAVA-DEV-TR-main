@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays Practise</title>
+  </head>
+  <body>
+    <script>
+      const arr = [12, 5, 134, 55, 676, 12, 44, 855, 136];
+
+      const setPrices = (arr, rate) => {
+        if (!Array.isArray(arr) || arr.length <= 0) {
+          return;
+        }
+
+        for(let i=0; i<arr.length; i++){
+          arr[i] = arr[i] + arr[i] * rate / 100
+        //arr[0] =   12   +   12   *  20 / 100;        
+        }
+
+        return arr;
+
+       
+      };
+
+
+      const newArr = setPrices(arr, 50);
+      console.log("new array", newArr);
+
+     
+
+    </script>
+  </body>
+</html>

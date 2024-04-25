@@ -1,0 +1,22 @@
+@use "mixins" as m;
+
+.menu {
+    ul {
+      @include m.flex-box(row, space-evenly, center, 2rem);
+      li {
+        @include m.reset-list;
+        a {
+          @include m.coolLink;
+          &:hover {
+            background-color: burlywood;
+            color: aqua;
+          }
+        }
+      }
+    }
+  }
+
+.form{
+    @include m.reset-list;
+    margin-top: 5rem;
+}

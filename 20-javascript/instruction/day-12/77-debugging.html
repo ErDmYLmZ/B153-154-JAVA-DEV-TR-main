@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debugging</title>
+  </head>
+  <body>
+    <button id="btn">Click Me !</button>
+
+    <h3 id="lblResult"></h3>
+
+    <script>
+      document.getElementById("btn").addEventListener("click", () => {
+        let total = 0;
+
+        for (let i = 0; i < 5; i++) {
+          total += i * 3 + multiply(i);
+        }
+
+        document.getElementById("lblResult").innerText = total;
+      });
+
+      const multiply = (num) => {
+        let result = 0;
+
+        if (num > 3) {
+          result = num * 4;
+        } else {
+          result = num * 5;
+        }
+
+        return result;
+      };
+    </script>
+  </body>
+</html>

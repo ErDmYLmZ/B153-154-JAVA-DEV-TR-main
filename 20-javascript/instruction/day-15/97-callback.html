@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        const getDistance = (a, b, cb) => { 
+
+            // Alttaki asenkron yapıyı google ın distance API ına bağlandığını farzedelim.
+            setTimeout( ()=>{
+                const result = a - b;
+                cb(result); //calback fonksiyonu çağrıldı
+            }, 3000 );
+        }
+
+
+        console.log("Koordinatlar alındı");
+        getDistance(80, 30, (distance)=>{
+            console.log(distance)
+        });
+
+        console.log("Hello")
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+  </head>
+  <body>
+    <script>
+      const animals = ["fil", "kuş", "deve", "fare", "kedi", "kuş"];
+
+      const bigAnimals = animals.map((animal) => animal.toUpperCase());
+      console.log(bigAnimals);
+
+      const mixedAnimals = animals.map((animal) => {
+        if (!animal.startsWith("k")) {
+          return animal.toUpperCase();
+        } else {
+          return animal;
+        }
+      });
+      console.log(mixedAnimals);
+
+    </script>
+  </body>
+</html>

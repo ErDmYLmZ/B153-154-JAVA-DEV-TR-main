@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 class="name">Ali Gel</h1>
+
+    <p class="message"></p>
+
+    <script>
+      const elName = document.querySelector("h1.name");
+      console.log(elName)
+      const name = elName.innerText; // GET
+      console.log(name)
+
+      const message = `Hello ${name}`;
+      console.log(message)
+
+      const elMessage = document.querySelector(".message");
+      elMessage.innerText = message; // SET
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise-4</title>
+    <style>
+      .container {
+        padding: 1rem;
+        background-color: aqua;
+        width: 55%;
+      }
+      .container input,
+      .container button {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+      }
+      .container #msg {
+        margin-top: 1rem;
+        color: yellow;
+        font-size: 1.3rem;
+        width: 400px;
+        padding: 1rem;
+      }
+      .container label {
+        font-size: 1.3rem;
+        margin-right: 0.6rem;
+      }
+      .yesil {
+        background-color: black;
+        color: green !important;
+      }
+      .kirmizi {
+        background-color: black;
+        color: red !important;
+      }
+      .turuncu {
+        background-color: black;
+        color: orange !important;
+      }
+      .invisible {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" name="yas" id="yas" />
+      <input type="radio" name="cinsiyet" id="erkek" />
+      <label for="erkek">Erkek</label>
+      <input type="radio" name="cinsiyet" id="kadin" />
+      <label for="kadin">Kadın</label>
+      <button type="button" onclick="handleSoldier()">Askerlik Durumu</button>
+      <button onclick="handleDelete()">Temizle</button>
+      <div id="msg"></div>
+    </div>
+    <script src="assets/js/practise-4.js"></script>
+  </body>
+</html>

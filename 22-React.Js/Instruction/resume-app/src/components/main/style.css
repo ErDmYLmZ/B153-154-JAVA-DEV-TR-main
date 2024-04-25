@@ -1,0 +1,44 @@
+.main-content {
+    background: #FFF;
+    width: 740px;
+}
+
+.main-content p {
+    color: #2c2c2c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.main-content section {
+    padding: 60px 70px;
+    position: relative;
+    border-bottom: solid 1px #EEE;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .main-content {
+        width: 100%;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+
+    .main-pushed {
+        -ms-transform: translateX(260px);
+        -webkit-transform: translateX(260px);
+        transform: translateX(260px);
+    }
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .main-content section {
+        padding: 60px 30px;
+    }
+}

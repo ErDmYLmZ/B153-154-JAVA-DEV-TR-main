@@ -1,0 +1,39 @@
+body{
+    height: 100vh;
+     padding: 30px;
+     background-image: url("/assets/img/nature.jpg");
+     background-repeat: no-repeat;
+     background-size:100px; 
+}
+
+div.banner-1{
+    height: 40vh;
+    background-image: url("/assets/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+div.banner-2{
+    height: 60vh;
+    background-image: url("/assets/img/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px 400px;
+    background-position: center center;
+
+}
+
+div.banner-3{
+    height: 40vh;
+    background-image: url("/assets/img/nature.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+
+}

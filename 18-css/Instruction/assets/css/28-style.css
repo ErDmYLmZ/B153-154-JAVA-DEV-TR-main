@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}p.about{
+    font-size: 1.6rem;
+}
+
+p.about::first-letter{
+    color: red;
+    font-size: 5rem;
+    font-weight: 800;
+
+}
+
+p.about::first-line{
+    background-color: aqua;
+    font-style: italic;
+    line-height: 0.8;
+}
+
+p.about::selection{
+    background-color: chartreuse;
+   color: red;
+   
+}
+
+.liste li::marker{
+    color: red;
+    font-size: 3rem;
+}
+
+h1.title{
+    color: red;
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+h1.title::after{
+    content: "🔥";
+  
+    background-color: cyan;
+    margin-left: 2rem;
+}
+
+h1.title::before{
+    content: "😎";
+    background-color: red;
+
+
+}
+

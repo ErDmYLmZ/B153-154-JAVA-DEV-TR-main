@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays Practise</title>
+  </head>
+  <body>
+    <script>
+      const arr = [12, 5, 134, 55, 676, 12, 44, 855, 136];
+
+      const getMaxNumber = (arr) => {
+        if (!Array.isArray(arr) || arr.length <= 0) {
+          return;
+        }
+
+        let maxNum = arr[0];
+
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > maxNum) {
+            maxNum = arr[i];
+          }
+        }
+
+        return maxNum;
+      };
+
+      const maxNum = getMaxNumber(arr);
+      console.log(maxNum);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+</head>
+<body>
+
+
+    <script>
+
+        const sum1 = (a, b) => {
+            return a + b;
+        }
+
+        console.log(sum1(56,78));
+
+
+
+        // REST
+
+        const sum2 = (...nums) =>{
+            const total = nums.reduce( (t, x) => t+x, 0 );
+            return total;
+        }
+
+        console.log(sum2(1,2,3,4,5)) ;
+        console.log(sum2(234,56,23)) ;
+        console.log(sum2(242,562,56,2,67,8,3445,89,946,45)) ;
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

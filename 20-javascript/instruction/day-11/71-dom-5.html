@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+
+    <style>
+      .red{
+        background-color: red;
+        color:antiquewhite;
+      }
+
+
+      .blue{
+        background-color: blue;
+        color:cornsilk;
+      }
+
+      .black{
+        background-color: black;
+        color: chartreuse;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p id="message">
+      Javascript DOM manipulasyonu
+      <span style="display: none">çok</span> keyifli
+    </p>
+
+    <button id="btn1">Add</button>
+    <button id="btn2">Remove</button>
+    <button id="btn3">Toggle</button>
+    <button id="btn4">Replace</button>
+
+
+
+    <script>
+        const message = document.getElementById("message");
+        
+      document.getElementById("btn1").addEventListener("click", ()=>{
+          message.classList.add("red");
+      })
+
+      document.getElementById("btn2").addEventListener("click", ()=>{
+          message.classList.remove("red");
+      })
+
+      document.getElementById("btn3").addEventListener("click", ()=>{
+          message.classList.toggle("blue");
+      })
+
+      document.getElementById("btn4").addEventListener("click", ()=>{
+          message.classList.replace("blue", "black");
+      })
+        
+
+      // CSS özellikleri camelCase yazılmalıdır.
+      message.style.borderWidth="3px";
+      message.style.borderColor="red";
+      message.style.borderStyle="solid"
+
+      message.style.border="3px solid blue"
+
+
+
+    </script>
+  </body>
+</html>

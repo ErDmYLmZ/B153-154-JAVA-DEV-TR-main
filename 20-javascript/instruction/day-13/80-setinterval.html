@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval</title>
+</head>
+<body>
+
+
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button>
+
+    <ul id="lstPrices">
+
+    </ul>
+
+
+    <script>
+        let interval = null;
+
+        document.getElementById("btnStart").addEventListener("click", ()=>{
+            if(interval) return;
+
+            interval = setInterval( ()=>{
+                const price = Math.floor(Math.random() * 4000 + 1000);
+                document.getElementById("lstPrices").innerHTML += `<li>${price}</li>`;
+            }, 2000 );
+
+            console.log(interval);
+
+        });
+
+        document.getElementById("btnStop").addEventListener("click", ()=>{
+            clearInterval(interval);
+            interval = null;
+        });
+
+
+
+    </script>
+    
+</body>
+</html>

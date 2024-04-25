@@ -1,0 +1,19 @@
+@use "variables" as v ;
+
+h1{
+    color:v.$renk3 ;
+    background-color: v.$renk2;
+    text-align: center;
+    font-family: v.$dil-ailesi;
+}
+
+button{
+    background-color: v.$renk1;
+    color: v.$renk3;
+    border: v.$cerceve;
+    padding: 10px;
+}
+input{
+    background-color: v.$renk2;
+    color:v.$renk4;
+}

@@ -1,0 +1,12 @@
+body{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 600;
+}
+
+h1.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration:line-through;
+    font-style: italic;
+    font-weight: 300;
+}
+

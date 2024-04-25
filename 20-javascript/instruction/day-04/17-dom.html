@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+
+    <style>
+        .title{
+            font-size: 4rem;
+            color: red;
+        }
+
+        .line{
+            text-decoration: underline;
+        }
+
+        .color-navy{
+            color: navy;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    <h1 id="pageTitle" class="title line">Hello DOM</h1>
+
+    <p id="about">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia veniam
+      nostrum assumenda, magnam dolore temporibus cupiditate, perferendis quos
+      doloribus, placeat sed aspernatur quisquam vel cumque non neque officiis
+      animi architecto?
+    </p>
+
+    <script>
+      const h1 = document.querySelector("h1#pageTitle");
+      console.log(h1, typeof null);
+
+      console.log(h1.classList)
+
+      h1.classList.add("color-navy");
+      h1.classList.remove("title");
+
+    </script>
+  </body>
+</html>

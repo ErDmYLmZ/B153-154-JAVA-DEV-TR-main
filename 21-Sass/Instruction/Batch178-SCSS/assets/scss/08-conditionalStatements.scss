@@ -1,0 +1,52 @@
+@mixin avatar($boyut,$yuvarlak:false){
+    width: $boyut;
+    height: $boyut;
+    
+
+    @if $yuvarlak==true{
+        border-radius: $boyut/2;
+    }
+
+}
+
+.avatar-container1{
+background-color: firebrick;
+@include avatar(100px,true );
+margin-bottom: 5rem;
+
+
+}
+
+.avatar-container2{
+    background-color: cornflowerblue;
+    @include avatar(500px )
+}
+
+@mixin kenarlik($yon,$tur,$renk){
+
+    @if($yon==left){
+        border-left:5px $tur $renk  ;
+
+    }@else if($yon==right){
+        border-right:5px $tur $renk ;
+    }@else if($yon==top){
+        border-top:5px $tur $renk ;
+    }@else if($yon==bottom){
+        border-bottom:5px $tur $renk ;
+    }@else if($yon==right){
+        border-right:5px $tur $renk ;
+    }@else if($yon==all){
+        border:5px $tur $renk ;
+    }@else{
+        @error "Hatali yon girdiniz"
+    }
+
+}
+
+.kutu1{
+    margin: 4rem;
+    height:300px;
+    width: 300px;
+    background-color: aqua;
+    @include kenarlik(all, dotted, rgb(255, 0, 55));
+}

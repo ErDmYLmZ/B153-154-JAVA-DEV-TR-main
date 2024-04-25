@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <main>
+      <p class="about">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non eius,
+        dolor iure tempora reprehenderit beatae earum facilis sit, explicabo
+        deserunt molestias quod. Molestias omnis eos aliquam similique, quos
+        tenetur quasi!
+      </p>
+
+
+      <ul class="list">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a id="lnkAbout" href="https://google.com">About</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </main>
+
+
+    <script>
+        document.getElementById("lnkAbout").addEventListener("click", (e)=>{
+            e.preventDefault();
+
+            // document.querySelector("main .about").style.backgroundColor = "green"
+
+            e.target.closest("main").querySelector(".about").style.backgroundColor = "green"
+
+        });
+
+    </script>
+  </body>
+</html>

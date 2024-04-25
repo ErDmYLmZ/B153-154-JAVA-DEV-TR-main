@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread</title>
+</head>
+<body>
+    
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            salary: 4500
+        }
+
+        const newPerson = person;
+        newPerson.firstName = "David";
+
+        console.log(person.firstName, newPerson.firstName);
+
+
+
+        // Object cloning
+        const person2 = { ...person }; // Object.assign(person) // shallow copy
+        person2.firstName = "Susanne";
+
+        console.log(person.firstName, person2.firstName);
+
+
+        const person3 = { ...person, birthdate: "10.10.1984", salary: 5000 }
+
+        delete person3.lastName; // Object içinden property silme
+        console.log(person3)
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

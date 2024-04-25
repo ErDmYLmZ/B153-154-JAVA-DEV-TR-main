@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.title1{
+    border: 3px dotted red;
+}
+
+.title2{
+    border-top: 5px dashed blue;
+    border-bottom: 5px dashed blue;
+    border-right: 5px double purple;
+
+}
+.title3{
+    border-left: 30px groove crimson;
+    border-right: 30px groove crimson;
+    background-color: aqua;
+    display: inline-block;
+}
+.title4{
+    border-bottom: 15px rgb(0, 255, 17) ridge;
+}
+.title5{
+    border: 5px solid red;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}

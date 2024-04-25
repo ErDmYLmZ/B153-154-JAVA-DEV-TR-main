@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Practise</title>
+</head>
+<body>
+    
+
+    <script>
+        const tryPriceList = [5000, 7000, 99000, 6500, 78520, 12350];
+        const usd = 27.30;
+        const eur = 28.98;
+
+        const usdPriceList = tryPriceList.map( (price) => (price / usd).toFixed(2) );
+        const eurPriceList = tryPriceList.map( (price) => (price / eur).toFixed(2) );
+        console.log(usdPriceList);
+        console.log(eurPriceList);
+
+
+
+    </script>
+</body>
+</html>

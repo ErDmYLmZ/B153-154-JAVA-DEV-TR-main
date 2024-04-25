@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input Types</title>
+  </head>
+  <body>
+    <form method="post" action="/users/login" target="_blank">
+      <input type="text" name="firstName" placeholder="adinizi giriniz" required /><br />
+      <input
+        type="number"
+        name="salary"
+        placeholder="maasinizi giriniz"
+      /><br />
+      <input type="email" name="email" placeholder="mailinizi giriniz" /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="sifrenzi girniz"
+        required
+      /><br />
+      <input
+        type="search"
+        name="search"
+        placeholder="neyi aramak istiyorsunuz? "
+      /><br />
+      <input type="url" name="website" /><br />
+      <input type="tel" name="tel" placeholder="numaranizi giriniz" /><br />
+      <input type="hidden" name="code" /><br />
+
+      <input type="checkbox" name="user" id="usr567" checked disabled />
+      <label for="usr567">Kullanici sozlesmesini okudum</label><br />
+
+      <input type="checkbox" name="maas" id="maas" checked readonly />
+      <label for="maas">Maas sozlesmesini okudum</label><br />
+
+      <input type="radio" name="cinsiyet" id="e" />
+      <label for="e">Erkek</label>
+
+      <input type="radio" name="cinsiyet" id="k" />
+      <label for="k">Kadin</label><br />
+
+      <input type="file" name="cv" /><br />
+
+      <input type="color" name="renk" /><br />
+      <input type="range" name="oran" /><br />
+
+      <input type="date" name="tarih" /><br />
+      <input type="time" name="zaman" /><br />
+      <input type="datetime-local" name="tarih saat local" /><br />
+      <input type="month" name="ay" /><br />
+      <input type="week" name="hafta" /><br />
+      <br>
+      <br>
+
+
+      <select name="sehir" multiple size="3" >
+        <option value="" disabled selected >Lutfen bir sehir seciniz</option>
+        <option value="06">Ankara</option>
+        <option value="61">Trabzon</option>
+        <option value="34">Istanbul</option>
+        <option value="41">Izmit</option>
+
+      </select>
+      <br>
+      <br>
+      <select name="yemek" multiple size="3">
+        <option value="">Hamsi Tava</option>
+        <option value="">Hamsi Buglama</option>
+        <option value="">Hamsi Izgara</option>
+        <option value="">Hamsi Tursusu</option>
+      </select><br>
+    <textarea name="yorum" id="yrm" cols="30" rows="10"></textarea>
+    <input type="button" value="kaydet">
+    <input type="submit" value="gonder" >
+    <input type="reset" value="temizle">
+
+
+
+
+
+    </form>
+  </body>
+</html>

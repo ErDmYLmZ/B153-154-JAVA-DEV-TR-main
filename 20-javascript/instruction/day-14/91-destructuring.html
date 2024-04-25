@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        salary: 4500,
+        birthdate: "10.10.1984",
+      };
+
+      const sayHello1 = (firstName, lastName) => {
+        alert(`Hello ${firstName} ${lastName}`);
+      };
+
+      sayHello1(person.firstName, person.lastName);
+
+      // destruturing
+      // {firstName, lastName} = person
+      const sayHello2 = ({ firstName, lastName }) => {
+        alert(`Hello ${firstName} ${lastName}`);
+      };
+
+      sayHello2(person);
+    </script>
+  </body>
+</html>

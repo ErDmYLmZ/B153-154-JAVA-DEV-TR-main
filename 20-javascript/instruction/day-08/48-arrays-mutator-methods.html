@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutator Methods</title>
+</head>
+<body>
+
+
+    <script>
+        const cars = ["Porche", "Ferrari", "Mustang", "Tesla"];
+        console.log(cars);
+        let arrLength = cars.push("Lamborgini");
+        console.log(cars, arrLength);
+
+        let deletedItem = cars.pop();
+        console.log(cars, deletedItem);
+
+
+        deletedItem = cars.shift();
+        console.log(cars, deletedItem);
+
+        arrLength = cars.unshift("Lamborgini");
+        console.log(cars, arrLength);
+
+        cars.sort(); // mutator method olduğu için mevcut diziyi sıralar
+        console.log(cars);
+
+
+        const newArr = cars.toSorted(); // mutator olmadığı için mevcut diziyi bozmaz, yeni bir dizi oluşturup sıralamayı ondan yapar
+        console.log(newArr);
+
+        cars.reverse();
+        console.log(cars);
+
+        cars.splice(2, 2);
+        console.log(cars);
+
+        cars.splice(0, 0, "Jaguar", "Volvo");
+        console.log(cars);
+
+        cars.splice(3, 1, "Citroen");
+        console.log(cars);
+
+        cars.splice(cars.length-1, 0, "Maserati");
+        console.log(cars);
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce Practise</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const salaries = [4000, 2000, 1500, 4500, 1800, 2100];
+
+        const totalSalary = salaries.filter( (salary) => salary<3000 )
+                                    .map( (salary) => salary * 1.1 )
+                                    .reduce( (total, salary) => total + salary, 0 );
+
+
+        console.log(totalSalary);
+
+
+    </script>
+
+
+</body>
+</html>

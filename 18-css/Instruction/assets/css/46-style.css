@@ -1,0 +1,18 @@
+.menu{
+    background-color: rgb(52, 196, 42);
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+
+
+}
+table.liste thead{
+    background-color: salmon;
+    position: sticky;
+    top:10px;
+    z-index: 1;
+
+}
+
+

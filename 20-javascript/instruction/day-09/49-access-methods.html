@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Methods</title>
+</head>
+<body>
+    
+
+    <script>
+        const animals = ["fil", "kuş", "deve", "fare", "kedi", "kuş"];
+        console.log(animals);
+        console.log(animals.includes("fil"));
+        console.log(animals.includes("kartal"));
+
+        console.log(animals.join());
+        console.log(animals.join(""));
+        console.log(animals.join("-"));
+        console.log(animals.slice(2));
+        console.log(animals.slice(1,5));
+        console.log(animals.toString());
+
+        console.log(animals.indexOf("deve"));
+        console.log(animals.lastIndexOf("kuş"));
+
+        console.log(animals.concat(["köstebek", "koala"]));
+        console.log(["timsah", "levrek", "sazan"].concat(animals));
+
+
+        console.log(animals);
+
+
+    </script>
+</body>
+</html>

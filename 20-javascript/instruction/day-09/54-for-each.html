@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For each</title>
+  </head>
+  <body>
+    <script>
+      const animals = ["fil", "kuş", "deve", "fare", "kedi", "kuş"];
+
+      // FOR EACH
+      const cb = (animal) => {
+        console.log(animal);
+      };
+      animals.forEach(cb);
+
+      // FOR EACH SHORT WAY
+      animals.forEach((animal) => {
+        console.log(animal);
+      });
+    </script>
+  </body>
+</html>

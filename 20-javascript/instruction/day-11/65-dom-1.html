@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1 id="mainTitle">Document Object Model</h1>
+
+    <p class="highlight">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa similique
+      quam dolor veritatis expedita nostrum aspernatur id eligendi eaque animi
+      maxime delectus placeat magnam alias esse eveniet pariatur, praesentium
+      voluptates.
+    </p>
+
+    <p class="about">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa similique
+      quam dolor veritatis expedita nostrum aspernatur id eligendi eaque animi
+      maxime delectus placeat magnam alias esse eveniet pariatur, praesentium
+      voluptates.
+    </p>
+
+    <p class="about">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa similique
+      quam dolor veritatis expedita nostrum aspernatur id eligendi eaque animi
+      maxime delectus placeat magnam alias esse eveniet pariatur, praesentium
+      voluptates.
+    </p>
+
+    <script>
+        const mainTitle = document.getElementById("mainTitle");
+        console.log(mainTitle.innerText);
+
+
+        const paragraphs = document.getElementsByTagName("p");
+        console.log(paragraphs);
+
+        const aboutEls = document.getElementsByClassName("about");
+        console.log(aboutEls)
+
+
+
+    </script>
+  </body>
+</html>

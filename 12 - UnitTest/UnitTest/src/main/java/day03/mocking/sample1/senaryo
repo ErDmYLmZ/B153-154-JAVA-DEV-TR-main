@@ -1,0 +1,4 @@
+ornegimizde, bir UserService sinifi ve bu sinifi test etmek icin bir UserManager sinifi kullanacagiz.
+    UserManager sinifi, UserService'in kullanici islemlerini gerceklestiren bagimliligini temsil eder.
+    UserService sinifini test ederken UserManager'in gercek bir ornegini kullanmak yerine, bu
+    bagimliligi mock (sahte) bir nesneyle degistirecegiz.

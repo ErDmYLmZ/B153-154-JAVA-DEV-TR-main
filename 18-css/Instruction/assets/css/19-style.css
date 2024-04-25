@@ -1,0 +1,28 @@
+body{
+    font-family: 'Roboto Slab', serif;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight:500;
+}
+nav.menu{
+    background-color: crimson;
+   margin: 10px;
+
+}
+.menu-ul{
+    list-style-type: "🐤";
+    padding: 0;
+    list-style-position: inside;
+}
+.menu-ul-link{
+   padding: 3px;
+
+}
+
+.menu-ul-link:hover{
+    background-color: lightsteelblue;
+    color: blueviolet;
+}

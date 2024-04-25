@@ -1,0 +1,80 @@
+h1 {
+  color: red;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.menu {
+  background-color: palevioletred;
+  padding: 2rem;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin-right: 4rem;
+
+      a {
+        text-decoration: none;
+        background-color: crimson;
+        padding: 5px 10px;
+        color: yellow;
+      }
+    }
+  }
+}
+
+.alert,
+.warning {
+  ul {
+    color: red;
+    font-size: 1.5rem;
+  }
+}
+
+.alert {
+  background-color: aqua;
+  font-style: italic;
+  ul {
+    > li {
+      list-style-type: "🐯";
+    }
+
+    + p {
+      color: green;
+      font-size: 3rem;
+    }
+
+    ~ a {
+      display: block;
+      font-size: 2rem;
+      color: blue;
+      text-decoration: none;
+    }
+  }
+}
+.divEl {
+  ul {
+    list-style-type: none;
+    li {
+      font-size: 2rem;
+      &:hover {
+        background-color: yellowgreen;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+
+        &::after {
+          content: "🐔";
+        }
+
+        &::before {
+          content: "🐓";
+        }
+      }
+    }
+  }
+}

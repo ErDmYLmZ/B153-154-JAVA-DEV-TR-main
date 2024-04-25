@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    color: palevioletred;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+.card-list{
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        li{
+            font-size: 2rem;
+            color: purple;
+            font-weight: 700;
+
+            &::after{
+                content: "🐦‍⬛";
+
+            }
+        }
+    }
+}

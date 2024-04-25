@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <input type="text" id="txtName">
+    <button id="btnAdd">Add</button>
+
+    <ul id="list">
+        
+    </ul>
+
+
+    <script>
+        document.getElementById("btnAdd").addEventListener("click", ()=>{
+            const txtName = document.getElementById("txtName");
+            const ulList = document.getElementById("list");
+            const name = txtName.value;
+
+            if(!name) return;
+
+            const newLi = document.createElement("li"); // <li></li>
+            newLi.innerText = name; // <li>Ayşe</li>
+            newLi.style.color="red";
+            newLi.style.cursor = "pointer";
+            newLi.setAttribute("data-id", Math.floor(Math.random()*1000)); // <li data-id="223423">Ayşe</li>
+            newLi.addEventListener("click", (e)=>{
+                e.target.remove(); // DOM dan kaldırır
+            });
+
+
+            ulList.appendChild(newLi); // DOM a yerleştirmek için
+
+            txtName.value=""
+            txtName.focus();
+
+
+
+
+
+        })
+    </script>
+
+</body>
+</html>

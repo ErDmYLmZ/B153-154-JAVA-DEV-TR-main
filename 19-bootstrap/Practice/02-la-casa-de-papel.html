@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- BOOTSTRAP CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+            integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- LOCAL CSS -->
+        <link rel="stylesheet" href="./assets/css/02-la-casa-de-papel.css" />
+        <title>LA CASA DE PAPEL</title>
+    </head>
+    <body class="bg-black d-flex align-items-center justify-content-center">
+        <div class="container-fluid">
+            <div class="row row-cols-1 align-items-center row-cols-xl-2 p-5">
+                <div class="col">
+                    <img
+                        src="./assets/images/masked_women.png"
+                        alt="masked women"
+                        class="w-100" />
+                </div>
+                <div
+                    class="form-container d-flex flex-column justify-content-center p-5 text-center text-light col bg-dark rounded-5">
+                    <h1 class="mb-3">Sign Up</h1>
+                    <h2 class="fs-5 fw-light mb-4">
+                        Create your Hope UI account
+                    </h2>
+                    <form class="form">
+                        <div class="d-flex gap-3 text-start">
+                            <!-- LEFT SIDE FORM INPUTS -->
+                            <div class="col">
+                                <!-- INPUT 1 -->
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label"
+                                        >First Name</label
+                                    >
+                                    <input
+                                        class="form-control bg-secondary text-light"
+                                        type="text"
+                                        id="firstName" />
+                                </div>
+                                <!-- INPUT 2 -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label"
+                                        >Email</label
+                                    >
+                                    <input
+                                        class="form-control bg-secondary text-light"
+                                        type="text"
+                                        id="email" />
+                                </div>
+                                <!-- INPUT 3 -->
+                                <div class="mb-3">
+                                    <label for="password" class="form-label"
+                                        >Password</label
+                                    >
+                                    <input
+                                        class="form-control bg-secondary text-light"
+                                        type="text"
+                                        id="password" />
+                                </div>
+                            </div>
+                            <!-- RIGHT SIDE FORM INPUTS -->
+                            <div class="col">
+                                <!-- INPUT 4 -->
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label"
+                                        >Last Name</label
+                                    >
+                                    <input
+                                        class="form-control bg-secondary text-light"
+                                        type="text"
+                                        id="lastName" />
+                                </div>
+                                <!-- INPUT 5 -->
+                                <div class="mb-3">
+                                    <label for="phoneNumber" class="form-label"
+                                        >Phone No.</label
+                                    >
+                                    <input
+                                        class="form-control bg-secondary text-light"
+                                        type="text"
+                                        id="phoneNumber" />
+                                </div>
+                                <!-- INPUT 6 -->
+                                <div class="mb-3">
+                                    <label
+                                        for="confirmPassword"
+                                        class="form-label"
+                                        >Confirm Password</label
+                                    >
+                                    <input
+                                        class="form-control bg-secondary text-light"
+                                        type="text"
+                                        id="confirmPassword" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input
+                                type="checkbox"
+                                id="agreeToTerms"
+                                class="form-check-input" />
+                            <label for="agreeToTerms" class="form-check-label">
+                                I agree with the terms of use
+                            </label>
+                        </div>
+                        <button type="button" class="btn mb-3 btn-danger w-50">
+                            Sign up
+                        </button>
+                    </form>
+                    <p>or sign up with other accounts</p>
+                    <!-- SOCIAL LINKS -->
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img
+                                src="./assets/images/gmail.svg"
+                                alt="google"
+                                class="social-icon" />
+                        </a>
+                        <a href="#" class="social-link">
+                            <img
+                                src="./assets/images/facebook.svg"
+                                alt="facebook"
+                                class="social-icon" />
+                        </a>
+                        <a href="#" class="social-link">
+                            <img
+                                src="./assets/images/instagram.svg"
+                                alt="instagram"
+                                class="social-icon" />
+                        </a>
+                        <a href="#" class="social-link">
+                            <img
+                                src="./assets/images/linkedin.svg"
+                                alt="linkedin"
+                                class="social-icon" />
+                        </a>
+                    </div>
+                    <p>
+                        Already have an account?
+                        <span class="text-danger ms-2">Sign In</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- LOGO -->
+        <img
+            src="./assets/images/nairobi_logo.png"
+            alt=""
+            class="position-fixed bottom-0 end-0 logo" />
+    </body>
+</html>

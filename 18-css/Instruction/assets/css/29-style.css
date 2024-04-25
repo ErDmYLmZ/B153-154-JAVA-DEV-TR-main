@@ -1,0 +1,56 @@
+:root{
+    --color1: #5B9A8B;
+    --color2:#141E46;
+    --color3:white;
+    
+
+}
+
+nav.menu{
+    background-color: var(--color1);
+    text-align: center;
+    margin: 3rem;
+}
+
+nav.menu ul{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+   
+}
+nav.menu ul li{
+    display: inline-block;
+}
+
+nav.menu ul li::after{
+    content: "|";
+    color: var(--color2);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav.menu ul li:last-child::after{
+    content: "►";
+}
+nav.menu ul li:first-child::before{
+    content: "◄";
+    color: var(--color2);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav.menu a{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 2rem;
+    text-decoration: none;
+}
+nav.menu a:hover{
+    background-color: violet;
+    color: var(--color3);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}

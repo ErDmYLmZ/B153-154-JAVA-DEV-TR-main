@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoisting</title>
+  </head>
+  <body>
+    <script>
+      // ************** Function Declaration *************
+        // Normalde önce fonksiyon tanımlanır sonra ona ulaşılır. 
+        // Ancak JS deki hoisting den dolayın fonksiyonlar tepeye alındığı için bu
+        // durumda hata vermez
+
+      sum1(4, 5);
+      function sum1(num1, num2) {
+        return num1 + num2;
+      }
+
+      // ************** Function Declaration *************
+
+
+
+      // ************* Function Expression  *************
+      // expression yönteminde fonksiyon tanımlanmadan fonksiyona erişime izin verilmez
+
+      const sum2 = (num1, num2) => num1 + num2;
+      sum2(45,5);
+
+      // ************* Function Expression  *************
+
+
+      
+      console.log(x);
+      var x = 5;
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

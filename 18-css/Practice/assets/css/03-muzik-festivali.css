@@ -1,0 +1,124 @@
+:root {
+    --color1: rgb(241, 196, 15);
+    --color2: rgb(44, 62, 80);
+    --color3: rgb(231, 76, 60);
+    --color4: rgb(236, 240, 241);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: var(--color2); */
+}
+
+header {
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 3px solid var(--color3);
+}
+
+h1 {
+    margin: 0;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: var(--color2);
+    padding: 1rem;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menuLabel {
+    color: var(--color4);
+    cursor: pointer;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.menu-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color1);
+    position: absolute;
+    border-radius: 5px;
+}
+
+.menu-links > a {
+    color: var(--color2);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+
+.menu-link:hover {
+    background-color: var(--color3);
+    color: var(--color4);
+}
+
+#menuInput {
+    display: none;
+}
+
+#menuInput:checked + .menu-links {
+    display: flex;
+}
+
+/* MAIN CONTENT */
+
+main {
+    padding: 1rem;
+    background-color: var(--color4);
+}
+
+.sahne {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid var(--color3);
+}
+
+.sahne:nth-child(1) > h2::before {
+    content: "🎉";
+    margin-right: 0.5rem;
+}
+
+.sahne:nth-child(2) > h2::before {
+    content: "🎤";
+    margin-right: 0.5rem;
+}
+
+.sahne:nth-child(3) > h2::before {
+    content: "🎤";
+    margin-right: 0.5rem;
+}
+
+.sahne:nth-child(4) > h2::before {
+    content: "📅";
+    margin-right: 0.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--color2);
+    text-align: center;
+    border-top: 3px solid var(--color3);
+    color: var(--color1);
+    padding: 2rem;
+}
+
+footer a {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback</title>
+  </head>
+  <body>
+    <script>
+      const siparisVer = (cb) => {
+        setTimeout(() => {
+          console.log("Sipariş verildi");
+          cb();
+        }, 4000);
+      };
+
+      const yemekYe = (cb) => {
+        setTimeout(() => {
+          console.log("Yemek yedi");
+          cb();
+        }, 3500);
+      };
+
+      const filmIzle = () => {
+        setTimeout(() => {
+          console.log("Film izledi");
+          //cb();
+        }, 6000);
+      };
+
+      const patlakMisirYe = () => {
+        setTimeout(() => {
+          console.log("Patlak mısır yendi");
+          //cb();
+        }, 1500);
+      };
+
+      // callback chain
+
+      siparisVer(() => {
+        yemekYe(() => {
+          filmIzle();
+          patlakMisirYe();
+        });
+      });
+    </script>
+  </body>
+</html>

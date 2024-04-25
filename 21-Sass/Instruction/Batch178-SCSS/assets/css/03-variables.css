@@ -1,0 +1,23 @@
+input {
+  background-color: yellow;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  color: green;
+}
+
+button {
+  background-color: blue;
+  padding: 10px 20px;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  color: red;
+}
+button:hover {
+  background-color: green;
+  color: yellow;
+}/*# sourceMappingURL=03-variables.css.map */

@@ -1,0 +1,42 @@
+body{
+padding: 20px;
+}
+.kutular{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: column;
+}
+.kutular div{
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.kutular div:last-child{
+    background-color: red;
+    display: none;
+}
+
+@media screen and (min-width:768px) and (max-width:992px)  {
+    .kutular{
+        flex-direction: row;
+    
+    }
+    .kutular div{
+        background-color: greenyellow;
+    }
+    .kutular div:last-child{
+        display: block;
+        background-color: darkorange;
+    }
+
+     .kutular div:nth-child(2){
+        background-color: violet;
+     }
+}
+
+

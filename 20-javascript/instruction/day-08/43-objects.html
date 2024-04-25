@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      
+      const car = { // Object
+        brand: "Ford", // Property : value
+        model: "Mustang",
+        color: "red",
+        year: 1964,
+        engine: {
+          cylinders: 8,
+          size: 2.5,
+          type: "V8",
+          transmission: "manual",
+        },
+        start: ()=> { // method
+            console.log("Start")
+        }
+      };
+
+
+      console.log(car, typeof(car));
+      console.log(car.engine.transmission)
+
+      car.year = 2023; // car bir referans tipinde değişken olduğu için const sadece hafızadaki referansın değişimini engeller. OBject in içindeki değerlerin değişimene karışmaz.
+      // car = { brand: "Mercedes" } // const buna izin vermez
+
+      console.log(car);
+      car.start();
+
+
+      // Object dizi haline getirilir. Amaç Object elemanlarının bir dizi içinde iterate edilmesidir
+      console.log(Object.entries(car));
+      console.log(Object.keys(car));
+      console.log(Object.values(car));
+
+
+    </script>
+  </body>
+</html>

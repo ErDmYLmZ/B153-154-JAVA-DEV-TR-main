@@ -1,0 +1,20 @@
+.divEl ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+}
+.divEl ul li{
+    font-size: 2rem;
+    font-weight: 900;
+    color: blue;
+}
+
+
+h1{
+    color: red;
+    text-align: center;
+    font-size: 3rem;
+   
+}

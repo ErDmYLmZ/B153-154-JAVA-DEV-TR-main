@@ -1,0 +1,42 @@
+div.input-group{
+    background-color: rgb(47, 44, 44);
+    display: inline-block;
+    padding: 8px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+}
+
+div.input-group input{
+background: none;
+border: 0;
+outline: none;
+color: thistle;
+font-size: 1.3rem;
+padding: 0 10px;
+    
+}
+
+div.input-group button{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: crimson;
+    font-size: 1.2rem;
+    padding: 4px 2px;
+    position: absolute;
+    top: 4px;
+    right: 1px;
+    bottom: 2px;
+    background-image: linear-gradient(yellow,skyblue);
+}
+
+div.input-group button:hover{
+    background-image: radial-gradient(circle,skyblue,yellow,crimson,purple,orange);
+    cursor: pointer;
+}

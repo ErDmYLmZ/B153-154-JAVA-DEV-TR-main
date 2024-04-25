@@ -1,0 +1,146 @@
+.baslik2 {
+  background-color: red;
+  color: white;
+  font-size: 25px;
+}
+
+.baslik4 {
+  background-color: red;
+  color: white;
+  font-size: 30px;
+}
+
+.baslik6 {
+  background-color: red;
+  color: white;
+  font-size: 35px;
+}
+
+.baslik8 {
+  background-color: red;
+  color: white;
+  font-size: 40px;
+}
+
+.baslik10 {
+  background-color: red;
+  color: white;
+  font-size: 45px;
+}
+
+.kutu1 {
+  width: 100px;
+}
+
+.kutu2 {
+  width: 200px;
+}
+
+.kutu3 {
+  width: 300px;
+}
+
+.renkred {
+  background-color: red;
+  color: red;
+}
+
+.icon-input {
+  background-image: url("/assets/image/input.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.icon-nazar {
+  background-image: url("/assets/image/nazar.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.icon-close {
+  background-image: url("/assets/image/close.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.renkblue {
+  background-color: blue;
+  color: blue;
+}
+
+.icon-input {
+  background-image: url("/assets/image/input.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.icon-nazar {
+  background-image: url("/assets/image/nazar.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.icon-close {
+  background-image: url("/assets/image/close.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.renkgreen {
+  background-color: green;
+  color: green;
+}
+
+.icon-input {
+  background-image: url("/assets/image/input.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.icon-nazar {
+  background-image: url("/assets/image/nazar.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.icon-close {
+  background-image: url("/assets/image/close.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}/*# sourceMappingURL=09-loops.css.map */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <button
+      class="btn btn-danger mt-5 ms-5"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#yanMenu"
+    >
+      Menu
+    </button>
+    <div class="offcanvas offcanvas-end" id="yanMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Ofcanvas Ornegi</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ducimus
+          accusantium amet incidunt suscipit, cumque numquam quae consequatur
+          debitis praesentium iure voluptatibus eius sunt est, dicta accusamus
+          laborum nulla officiis et ea? Nobis, quod dicta.
+        </div>
+        <div class="dropdown mt-4">
+          <button
+            class="btn btn-outline-info dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >Dropdown Information</button>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Ekle</a></li>
+            <li><a href="#" class="dropdown-item">Kopyala</a></li>
+            <li><a href="#" class="dropdown-item">Cikar</a></li>
+            <li><a href="#" class="dropdown-item">Onayla</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

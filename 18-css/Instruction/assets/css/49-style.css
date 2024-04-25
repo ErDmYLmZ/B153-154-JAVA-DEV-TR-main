@@ -1,0 +1,106 @@
+.kutu{
+    width: 100px;
+    height: 100px;
+    margin:20px;
+}
+.kutu-1{
+    background-color: red;
+    transition: background-color 3s,padding 1s;
+    -webkit-transition: background-color 3s,padding 1s;
+    -moz-transition: background-color 3s,padding 1s;
+    -ms-transition: background-color 3s,padding 1s;
+    -o-transition: background-color 3s,padding 1s;
+}
+.kutu-1:hover{
+    background-color: cyan;
+    padding: 250px;
+    cursor: pointer;
+}
+.kutu-2{
+    background-color: blueviolet;
+    transition: transfrom 0.5s,background-color 2s;
+    -webkit-transition: transfrom 0.5s,background-color 2s;
+    -moz-transition: transfrom 0.5s,background-color 2s;
+    -ms-transition: transfrom 0.5s,background-color 2s;
+    -o-transition: transfrom 0.5s,background-color 2s;
+}
+.kutu-2:hover{
+    transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    -o-transform: rotate(150deg);
+    background-color: mediumseagreen;
+    cursor: pointer;
+}
+.btn{
+    background-color: hotpink;
+    padding: 8px 13px;
+    margin-left: 18px;
+    margin-top: 3rem;
+    transition: transform 2s, background-color 1s,translate 2s;
+    -webkit-transition: transform 2s, background-color 1s,translate 2s;
+    -moz-transition: transform 2s, background-color 1s,translate 2s;
+    -ms-transition: transform 2s, background-color 1s,translate 2s;
+    -o-transition: transform 2s, background-color 1s,translate 2s;
+}
+.btn:hover{
+    transform: rotate(360deg) translate(150px);
+    -webkit-transform: rotate(360deg) translate(150px);
+    -moz-transform: rotate(360deg) translate(150px);
+    -ms-transform: rotate(360deg) translate(150px);
+    -o-transform: rotate(360deg) translate(150px);
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.kutu-3{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    transition: transform 2s, background-color 3s, border-radius 4s ease-in-out,width  ;
+    -webkit-transition: transform 2s, background-color 3s, border-radius 4s ease-in-out,width  ;
+    -moz-transition: transform 2s, background-color 3s, border-radius 4s ease-in-out,width  ;
+    -ms-transition: transform 2s, background-color 3s, border-radius 4s ease-in-out,width  ;
+    -o-transition: transform 2s, background-color 3s, border-radius 4s ease-in-out,width  ;
+}
+.kutu-3:hover{
+    transform: rotate(360deg) scale(0.5) ;
+    -webkit-transform: rotate(360deg) scale(0.5) ;
+    -moz-transform: rotate(360deg) scale(0.5) ;
+    -ms-transform: rotate(360deg) scale(0.5) ;
+    -o-transform: rotate(360deg) scale(0.5) ;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    width: 300px;
+}
+
+.kutu-4{
+    background-color: goldenrod;
+    transition: all ease-in-out 4s ;
+    -webkit-transition: all ease-in-out 4s ;
+    -moz-transition: all ease-in-out 4s ;
+    -ms-transition: all ease-in-out 4s ;
+    -o-transition: all ease-in-out 4s ;
+}
+.kutu-4:hover{
+    background-color: darkred;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    transform: rotate(289deg);
+    -webkit-transform: rotate(289deg);
+    -moz-transform: rotate(289deg);
+    -ms-transform: rotate(289deg);
+    -o-transform: rotate(289deg);
+}

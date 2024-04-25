@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM practise</title>
+</head>
+<body>
+
+    <input type="number" id="txtTCK">
+    <button id="btnSearch" disabled>Search</button>
+
+    <script>
+        const btnSearch = document.getElementById("btnSearch");
+
+        document.getElementById("txtTCK").addEventListener("input", (e)=>{
+            const tck = e.target.value;
+            if(tck.length === 11){
+                btnSearch.removeAttribute("disabled");
+            }
+            else{
+                btnSearch.setAttribute("disabled", "disabled");
+            }
+        })
+
+
+</script>
+    
+</body>
+</html>

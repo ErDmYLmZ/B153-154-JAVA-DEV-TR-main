@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Practise</title>
+
+  </head>
+  <body>
+    <input type="number" id="price">
+    <button onclick="showPrice()">Show Price</button>
+
+    <p id="result"></p>
+   
+
+    <script>
+      
+      function showPrice(){
+        const txtPrice = document.querySelector("#price");
+        const elResult = document.querySelector("#result");
+        let price = Number(txtPrice.value);
+        let discount;
+
+        switch(true){
+          case price > 1500:
+            discount = 15;
+            break;
+          case price > 1000:
+            discount = 13;
+            break;
+          case price > 700:
+            discount = 10;
+            break;
+          case price > 500:
+            discount = 7;
+            break;
+          case price > 300:
+            discount = 5;
+            break;
+          default:
+            discount = 2;
+        }
+
+        price = price - price * discount / 100;
+
+        elResult.innerHTML = `<b>Son fiyat:</b> ${price.toFixed(2)}`;
+      }
+
+      
+    </script>
+  </body>
+</html>

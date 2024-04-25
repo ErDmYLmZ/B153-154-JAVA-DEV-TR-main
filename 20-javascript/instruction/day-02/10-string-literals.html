@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Literals</title>
+</head>
+<body>
+
+
+    
+
+
+    <script>
+        const name = "Ali";
+        const surname = "Gel";
+        const textHello1 = "Merhaba" + " " + name + " " + surname;
+        console.log(textHello1);
+
+        const textHello2 = `Merhaba ${name} ${surname}`;
+        console.log(textHello2);
+
+
+        //-----------------------------------
+        // Önceden bu şekilde çoklu satırlı değerler oluşturuluyordu
+        // const html = '<div><h2><a href="./index.php">Home Page</a></h2><p>Lorem </p></div>'
+
+        /*
+        let html = '';
+            html = html + '<div>';
+            html = html + '    <h2><a href="./index.php">Home Page</a></h2>';
+            html = html + '    <p>Lorem </p>';
+            html = html + '</div>';
+
+        */
+
+        const html = `
+            <div>
+                <h2><a href="./index.php">Home Page</a></h2>
+                <p>Lorem </p>
+            </div>
+        `;
+
+
+
+    </script>
+</body>
+</html>

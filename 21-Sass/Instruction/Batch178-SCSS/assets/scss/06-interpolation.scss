@@ -1,0 +1,35 @@
+$input:input;
+$btn:btn;
+$phone:phone;
+$hippo:hippo;
+$resim:resim;
+
+.icon-#{$btn}{
+    color: red;
+    font-size: 20px;
+}
+.icon-#{$hippo}{
+color: purple;
+font-size: 4rem;
+}
+
+.icon-#{$input}{
+    color: green;
+    font-size: 2rem;
+}
+
+.icon-#{$phone}{
+    color: chartreuse;
+    background-color: rgb(77, 38, 194);
+    font-size: 3rem;
+}
+
+.#{$resim}{
+   background-image: url("/assets/image/#{nazar}.png");
+   width: 100px;
+   height: 100px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   object-fit: cover;
+}

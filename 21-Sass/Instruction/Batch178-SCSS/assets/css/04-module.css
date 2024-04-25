@@ -1,0 +1,18 @@
+h1 {
+  color: teal;
+  background-color: purple;
+  text-align: center;
+  font-family: "Gill Sans";
+}
+
+button {
+  background-color: rgb(221, 221, 103);
+  color: teal;
+  border: 3px dashed hotpink;
+  padding: 10px;
+}
+
+input {
+  background-color: purple;
+  color: #5bc141;
+}/*# sourceMappingURL=04-module.css.map */

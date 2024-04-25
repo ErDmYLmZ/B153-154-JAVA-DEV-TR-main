@@ -1,0 +1,24 @@
+h2{
+    font-size: 3rem;
+    text-align: center;
+    color: purple;
+}
+
+.img-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    div{
+        
+        img{
+        width: 640px;
+        height: 426px;
+    }
+
+    } 
+   
+}

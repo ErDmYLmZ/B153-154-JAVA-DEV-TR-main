@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For each practise</title>
+  </head>
+  <body>
+    <script>
+      const arr = [300, 120, 330, 450, 15, 35, 700];
+      const newArr = [];
+
+      arr.forEach((num, index) => {
+        console.log(index, num)
+        newArr.push(num * 5);
+      });
+
+      console.log(arr);
+      console.log(newArr);
+    </script>
+  </body>
+</html>

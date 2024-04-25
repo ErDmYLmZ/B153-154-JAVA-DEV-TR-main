@@ -1,0 +1,64 @@
+body{
+    background-color: rgba(51, 127, 175, 0.851);
+    padding: 20px;
+}
+
+.register-form {
+    width: 75%;
+}
+
+.register-form .card-body{
+    padding: 30px 50px;
+     
+}
+
+.register-form .avatar{
+    background-color:#0B5ED7;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 2.5rem;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.register-form.card{
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.register-form form{
+    margin: 50px 0 20px 0;
+
+}
+
+.register-form form input,
+.register-form form button{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 10px 25px;
+}
+.register-form .card-footer{
+    text-align: center;
+
+}
+
+.register-form .card-footer .icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}

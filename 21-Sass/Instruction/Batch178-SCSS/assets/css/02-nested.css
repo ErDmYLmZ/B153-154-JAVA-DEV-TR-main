@@ -1,0 +1,71 @@
+@charset "UTF-8";
+h1 {
+  color: red;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu {
+  background-color: palevioletred;
+  padding: 2rem;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.menu ul li {
+  display: inline-block;
+  margin-right: 4rem;
+}
+.menu ul li a {
+  text-decoration: none;
+  background-color: crimson;
+  padding: 5px 10px;
+  color: yellow;
+}
+
+.alert ul,
+.warning ul {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.alert {
+  background-color: aqua;
+  font-style: italic;
+}
+.alert ul > li {
+  list-style-type: "🐯";
+}
+.alert ul + p {
+  color: green;
+  font-size: 3rem;
+}
+.alert ul ~ a {
+  display: block;
+  font-size: 2rem;
+  color: blue;
+  text-decoration: none;
+}
+
+.divEl ul {
+  list-style-type: none;
+}
+.divEl ul li {
+  font-size: 2rem;
+}
+.divEl ul li:hover {
+  background-color: yellowgreen;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+}
+.divEl ul li:hover::after {
+  content: "🐔";
+}
+.divEl ul li:hover::before {
+  content: "🐓";
+}/*# sourceMappingURL=02-nested.css.map */

@@ -1,0 +1,75 @@
+form.form-login input[type="text"]{
+
+    background-color: aliceblue;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 3rem;
+}
+form.form-login input[type="text"]:focus{
+    background-color: rgb(194, 122, 136);
+    text-align: center;
+    color: rgb(51, 193, 70);
+    font-size: 1.2rem;
+
+}
+form.form-login input[type="checkbox"]:checked{
+    outline: 10px solid crimson;
+  
+}
+
+.chk-menu:checked{
+    outline: 10px solid hotpink;
+}
+a:hover{
+    background-color:violet;
+    font-size: 3rem;
+}
+
+ul.liste li:first-child{
+    color: rebeccapurple;
+    font-size: 3rem;
+}
+
+ul.liste li:last-child{
+    color: salmon;
+    font-size: 3rem;
+    background-color: gold;
+}
+
+ul.liste li:nth-child(4){
+    color: rgb(43, 159, 226);
+    font-size: 3rem;
+    background-color: crimson;
+    display: inline-block;
+
+
+}
+
+.btn:active{
+    background-color: blueviolet;
+    font-size: 3rem;
+
+}
+.price-list{
+    margin: 3rem;
+}
+
+.price-list tr:nth-child(odd){
+    background-color:fuchsia ;
+    font-size: 1.4rem;
+    text-align: center;
+    color: azure;
+
+}
+.price-list tr:nth-child(even){
+    background-color:lime ;
+    font-size: 1.4rem;
+    text-align: center;
+    color: rgb(27, 16, 106);
+}
+
+.price-list tr:nth-child(3n+2){
+ background-color: black;
+
+}
+

@@ -1,0 +1,35 @@
+.bg{
+    padding: 50px;
+    margin: 30px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.bg-1{
+    background-image: linear-gradient(magenta,blue,yellow,green);
+
+}
+
+.bg-2{
+    background-image: linear-gradient(gray,crimson,burlywood,hotpink,black);
+}
+
+.bg-3{
+    background-image: linear-gradient(to top,purple,yellow);
+
+}
+
+.bg-4{
+    background-image: linear-gradient(90deg,red,blue);
+}
+.bg-5{
+    background-image: linear-gradient(cyan 20%,crimson 60% ,black 10%,white);
+}
+
+.bg-6{
+    background-image: radial-gradient(ellipse,#901010,blue);
+}
+.bg-7{
+    background-image: radial-gradient(ellipse,#901010 40%,yellow);
+}

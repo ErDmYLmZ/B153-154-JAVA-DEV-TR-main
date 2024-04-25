@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <main>
+      <p class="about">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non eius,
+        dolor iure tempora reprehenderit beatae earum facilis sit, explicabo
+        deserunt molestias quod. Molestias omnis eos aliquam similique, quos
+        tenetur quasi!
+      </p>
+
+
+      <ul class="list">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a id="lnkAbout" href="https://google.com">About</a></li>
+        <li><a href="#">Link 5</a></li>
+      </ul>
+    </main>
+
+
+    <script>
+        const listEl = document.querySelector(".list");
+        console.log(listEl.children)
+        console.log(listEl.children[3])
+        console.log(listEl.firstElementChild)
+        console.log(listEl.lastElementChild)
+        console.log(listEl.parentElement)
+
+        const liAbout = document.getElementById("lnkAbout").parentElement;
+        console.log(liAbout.nextElementSibling)
+        console.log(liAbout.previousElementSibling)
+
+
+
+
+    </script>
+  </body>
+</html>

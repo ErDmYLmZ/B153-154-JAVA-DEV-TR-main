@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullish</title>
+</head>
+<body>
+    
+    <h1 id="result"></h1>
+
+
+    <script>
+        function getArea(a, b){
+            const area = (a ?? 0) * (b ?? 0);
+            document.querySelector("#result").innerText = area;
+        }
+
+        getArea(5, 15)
+
+        getArea(56)
+
+/* 
+        const username= "ali";
+
+        // false olma durumları: null, undefined, empty, 0, false
+        if(!username){
+            alert("Boş geçmeyiniz")
+        }
+ */
+    </script>
+
+
+
+</body>
+</html>

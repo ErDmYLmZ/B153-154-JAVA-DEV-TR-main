@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <section class="weather-card">
+
+        <!-- ? Left Panel -->
+
+        <div class="left-panel">
+
+            <div class="date">
+                <h2>Monday</h2>
+                <h4>09 Oct 2023</h4>
+                <h5> <i class="fa-solid fa-location-dot"></i> ISTANBUL,TR</h5>
+            
+            </div>
+
+            <div class="temp">
+                <h2> <i class="fa-solid fa-cloud-moon-rain"></i> </h2>
+                <h3>12&deg;C</h3>
+                <h5>Rainy</h5>
+            </div>
+        </div>
+
+
+        <!-- ? Right panel -->
+
+
+        <div class="right-panel">
+            <ul class="status">
+                <li><span>PRECIPITION</span> <span>11%</span></li>
+                <li><span>HUMIDTY</span> <span>23%</span></li>
+                <li><span>WIND</span> <span>3 km/h</span></li>
+            </ul>
+
+            <ul class="days">
+                <li>
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span>Sun</span>
+                    <span>29&deg;C</span>
+                </li>
+
+                <li class="active">
+                    <span><i class="fa-solid fa-cloud-moon-rain"></i></span>
+                    <span>Mon</span>
+                    <span>12&deg;C</span>
+                </li>
+
+                <li>
+                    <span><i class="fa-solid fa-cloud-sun"></i></span>
+                    <span>Tue</span>
+                    <span>24&deg;C</span>
+                </li>
+
+                <li>
+                    <span><i class="fa-solid fa-cloud-rain"></i></span>
+                    <span>Wed</span>
+                    <span>18&deg;C</span>
+                </li>
+
+
+            </ul>
+            <button class="btn-change"><i class="fa-solid fa-location-dot"></i> Change Location</button>
+
+
+        </div>
+
+
+    </section>
+
+
+    
+</body>
+</html>
